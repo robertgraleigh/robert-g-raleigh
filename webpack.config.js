@@ -4,6 +4,8 @@
 
   var path = require('path');
   var webpack = require('webpack');
+  var ExtractTextPlugin = require('extract-text-webpack-plugin');
+  var HtmlWebpackPlugin = require('html-webpack-plugin');
 
   var config = {
     entry: {
@@ -17,13 +19,10 @@
       rules: [
         {
           test: /\.scss$/,
-          use: [{
-            loader: 'style-loader'
-          }, {
-            loader: 'css-loader'
-          }, {
-            loader: 'sass-loader'
-          }]
+          use: ExtractTextPlugin.extract({
+            fallback: 'style-loader',
+            use: ['css-loader', 'sass-loader']
+          })
         },
         {
           test: /\.js$/,
@@ -31,13 +30,17 @@
           use: {
             loader: 'babel-loader',
             options: {
-              presets: ['env', 'es2015']
+              presets: ['es2015']
             }
           }
         }
       ]
     },
     plugins: [
+      new ExtractTextPlugin({
+        filename: '[name].css',
+      }),
+      new HtmlWebpackPlugin(),
       new webpack.ProvidePlugin({
         $: 'jquery',
         jQuery: 'jquery'

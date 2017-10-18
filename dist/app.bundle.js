@@ -7000,11 +7000,14 @@ var _foundation = __webpack_require__(102);
 
 // import { Foundation } from '~/node_modules/foundation-sites';
 
-_foundation.Foundation.addToJquery($);
+_foundation.Foundation.addToJquery($); // import './src/scss/app.scss';
+
 
 $(document).ready(function () {
   $(document).foundation();
 }());
+
+alert("Foundation is calling!");
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(13)))
 
 /***/ }),
