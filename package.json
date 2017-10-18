@@ -1,0 +1,43 @@
+{
+  "name": "robert-g-raleigh",
+  "version": "1.0.0",
+  "description": "A static portfolio site for Robert G. Raleigh",
+  "main": "index.js",
+  "scripts": {
+    "start": "",
+    "build": "webpack",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robertgraleigh/robert-g-raleigh.git"
+  },
+  "keywords": [
+    "Node",
+    "Webpack",
+    "Foundation",
+    "Sites",
+    "Javascript",
+    "Sass"
+  ],
+  "author": "@RobertGRaleigh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/robertgraleigh/robert-g-raleigh/issues"
+  },
+  "homepage": "https://github.com/robertgraleigh/robert-g-raleigh#readme",
+  "dependencies": {
+    "css-loader": "^0.28.7",
+    "foundation-sites": "6.4.3",
+    "node-sass": "^4.5.3",
+    "path": "^0.12.7",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.0",
+    "webpack": "^3.8.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1"
+  }
+}
