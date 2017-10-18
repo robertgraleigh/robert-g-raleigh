@@ -13,7 +13,7 @@
     },
     output: {
       filename: '[name].bundle.js',
-      path: __dirname + '/dist'
+      path: __dirname + '/dist/js'
     },
     module: {
       rules: [
@@ -37,10 +37,17 @@
       ]
     },
     plugins: [
+      new HtmlWebpackPlugin({
+        title: 'Robert G. Raleigh',
+        filename: 'index.html'
+      }),
+      new HtmlWebpackPlugin({
+        title: 'About Robert G. Raleigh',
+        filename: 'about.html'
+      }),
       new ExtractTextPlugin({
         filename: '[name].css',
       }),
-      new HtmlWebpackPlugin(),
       new webpack.ProvidePlugin({
         $: 'jquery',
         jQuery: 'jquery'

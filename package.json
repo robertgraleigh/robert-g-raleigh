@@ -26,8 +26,7 @@
     "url": "https://github.com/robertgraleigh/robert-g-raleigh/issues"
   },
   "homepage": "https://github.com/robertgraleigh/robert-g-raleigh#readme",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
