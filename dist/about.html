@@ -2,8 +2,289 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>About Robert G. Raleigh</title>
-  </head>
+    <title>Robert G. Raleigh</title>
+  <link href="./css/app.css" rel="stylesheet"></head>
   <body>
+
+    <!-- NOTE: This is the off-canvas menu that appears when you click on the hamburger menu on smaller screens. Everything in the `.off-canvas` div belongs in `src/layouts/default.html`. Copy this section into the `default.html` file and remove it from this file.  -->
+    <div class="off-canvas ecommerce-header-off-canvas position-left" id="ecommerce-header" data-off-canvas>
+
+      <!-- Close button -->
+      <button class="close-button" aria-label="Close menu" type="button" data-close>
+        <span aria-hidden="true">&times;</span>
+      </button>
+
+      <ul class="vertical menu">
+        <li class="main-nav-link"><a href="categories.html">Category 1</a></li>
+        <li class="main-nav-link"><a href="#">Category 2</a></li>
+        <li class="main-nav-link"><a href="why.html">Category 3</a></li>
+        <li class="main-nav-link"><a href="build.html">Category 4</a></li>
+        <li class="main-nav-link"><a href="#">Category 5</a></li>
+      </ul>
+
+      <hr>
+
+      <!-- Menu -->
+      <ul class="menu vertical">
+        <li><a href="#">Help</a></li>
+        <li><a href="#">Order Status</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">My Account</a></li>
+      </ul>
+
+    </div>
+
+    <!-- NOTE: This is the header menu that appears at the top of your site. -->
+    <div class="off-canvas-content" data-off-canvas-content>
+      <div class="ecommerce-header-top show-for-large">
+        <div class="row align-justify">
+          <div class="ecommerce-header-top-message">
+            Robert G. Raleigh: Project management / frontend developer
+          </div>
+          <div class="ecommerce-header-top-links">
+            <ul>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Order Status</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">My Account</a></li>
+              <li><a href="#" target="_blank"><i class="fa fa-shopping-cart"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="top-bar">
+        <div class="top-bar-left">
+          <ul class="dropdown menu" data-dropdown-menu>
+            <li class="menu-text">Site Title</li>
+            <li>
+              <a href="#">One</a>
+            </li>
+            <li><a href="#">Two</a></li>
+            <li><a href="#">Three</a></li>
+          </ul>
+        </div>
+        <div class="top-bar-right">
+          <ul class="menu">
+            <li><a class="button secondary hollow">Contact Robert</a></li>
+            <li><a class="button primary">Get started</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="ecommerce-header-mobile hide-for-large">
+        <div class="ecommerce-header-mobile-left">
+          <button class="menu-icon" type="button" data-toggle="ecommerce-header"></button>
+          <form class="ecommerce-header-search-exandable">
+            <input type="search" placeholder="Search">
+          </form>
+        </div>
+        <div class="ecommerce-header-mobile-center">
+          <a href="#"><img class="logo" src="https://placehold.it/130x30"></a>
+        </div>
+        <div class="ecommerce-header-mobile-right">
+          <i class="fa fa-shopping-cart"></i>
+        </div>
+      </div>
+    </div>
+
+    <header class="grid-x">
+      <div class="small-12 medium-12 large-12 cell">
+        <h1 class="text-center">Empathy is the best client medicine</h1>
+        <p class="text-center">
+          <button type="button" class="button primary">
+            Get started
+          </button>
+        </p>
+      </div>
+    </header>
+
+    <section class="grid-x grid-margin-x grid-padding-x">
+      <div class="small-6 medium-4 large-3 cell">
+        <div class="product-card">
+          <div class="product-card-thumbnail">
+            <a href="#"><img src="https://placehold.it/180x180"/></a>
+          </div>
+          <h2 class="product-card-title"><a href="#">iQCU Credit Union</a></h2>
+          <span class="product-card-desc">ProjectDescription</span>
+          <span class="product-card-price">$9.99</span><span class="product-card-sale">$12.99</span>
+          <div class="product-card-colors">
+            <button href="#" class="product-card-color-option"><img src="https://placehold.it/30x30"/></button>
+            <button href="#" class="product-card-color-option"><img src="https://placehold.it/30x30"/></button>
+            <button href="#" class="product-card-color-option"><img src="https://placehold.it/30x30"/></button>
+            <button href="#" class="product-card-color-option"><img src="https://placehold.it/30x30"/></button>
+          </div>
+        </div>
+      </div>
+      <div class="small-6 medium-4 large-3 cell">
+        <div class="product-card">
+          <div class="product-card-thumbnail">
+            <a href="#"><img src="https://placehold.it/180x180"/></a>
+          </div>
+          <h2 class="product-card-title"><a href="#">House Plan Company</a></h2>
+          <span class="product-card-desc">ProjectDescription</span>
+          <span class="product-card-price">$9.99</span><span class="product-card-sale">$12.99</span>
+          <div class="product-card-colors">
+            <button href="#" class="product-card-color-option"><img src="https://placehold.it/30x30"/></button>
+            <button href="#" class="product-card-color-option"><img src="https://placehold.it/30x30"/></button>
+            <button href="#" class="product-card-color-option"><img src="https://placehold.it/30x30"/></button>
+            <button href="#" class="product-card-color-option"><img src="https://placehold.it/30x30"/></button>
+          </div>
+        </div>
+      </div>
+      <div class="small-6 medium-4 large-3 cell">
+        <div class="product-card">
+          <div class="product-card-thumbnail">
+            <a href="#"><img src="https://placehold.it/180x180"/></a>
+          </div>
+          <h2 class="product-card-title"><a href="#">BASK Media Planner</a></h2>
+          <span class="product-card-desc">ProjectDescription</span>
+          <span class="product-card-price">$9.99</span><span class="product-card-sale">$12.99</span>
+          <div class="product-card-colors">
+            <button href="#" class="product-card-color-option"><img src="https://placehold.it/30x30"/></button>
+            <button href="#" class="product-card-color-option"><img src="https://placehold.it/30x30"/></button>
+            <button href="#" class="product-card-color-option"><img src="https://placehold.it/30x30"/></button>
+            <button href="#" class="product-card-color-option"><img src="https://placehold.it/30x30"/></button>
+          </div>
+        </div>
+      </div>
+      <div class="small-6 medium-4 large-3 cell">
+        <div class="product-card">
+          <div class="product-card-thumbnail">
+            <a href="#"><img src="https://placehold.it/180x180"/></a>
+          </div>
+          <h2 class="product-card-title">Clean Energy. Bright Futures.<a href="#"></a></h2>
+          <span class="product-card-desc">Clean Energy. Bright Futures.</span>
+          <span class="product-card-price">$9.99</span><span class="product-card-sale">$12.99</span>
+          <div class="product-card-colors">
+            <button href="#" class="product-card-color-option"><img src="https://placehold.it/30x30"/></button>
+            <button href="#" class="product-card-color-option"><img src="https://placehold.it/30x30"/></button>
+            <button href="#" class="product-card-color-option"><img src="https://placehold.it/30x30"/></button>
+            <button href="#" class="product-card-color-option"><img src="https://placehold.it/30x30"/></button>
+          </div>
+        </div>
+      </div>
+      <div class="small-6 medium-4 large-3 cell">
+        <div class="product-card">
+          <div class="product-card-thumbnail">
+            <a href="#"><img src="https://placehold.it/180x180"/></a>
+          </div>
+          <h2 class="product-card-title"><a href="#">ProjectName</a></h2>
+          <span class="product-card-desc">ProjectDescription</span>
+          <span class="product-card-price">$9.99</span><span class="product-card-sale">$12.99</span>
+          <div class="product-card-colors">
+            <button href="#" class="product-card-color-option"><img src="https://placehold.it/30x30"/></button>
+            <button href="#" class="product-card-color-option"><img src="https://placehold.it/30x30"/></button>
+            <button href="#" class="product-card-color-option"><img src="https://placehold.it/30x30"/></button>
+            <button href="#" class="product-card-color-option"><img src="https://placehold.it/30x30"/></button>
+          </div>
+        </div>
+      </div>
+      <div class="small-6 medium-4 large-3 cell">
+        <div class="product-card">
+          <div class="product-card-thumbnail">
+            <a href="#"><img src="https://placehold.it/180x180"/></a>
+          </div>
+          <h2 class="product-card-title"><a href="#">ProjectName</a></h2>
+          <span class="product-card-desc">ProjectDescription</span>
+          <span class="product-card-price">$9.99</span><span class="product-card-sale">$12.99</span>
+          <div class="product-card-colors">
+            <button href="#" class="product-card-color-option"><img src="https://placehold.it/30x30"/></button>
+            <button href="#" class="product-card-color-option"><img src="https://placehold.it/30x30"/></button>
+            <button href="#" class="product-card-color-option"><img src="https://placehold.it/30x30"/></button>
+            <button href="#" class="product-card-color-option"><img src="https://placehold.it/30x30"/></button>
+          </div>
+        </div>
+      </div>
+      <div class="small-6 medium-4 large-3 cell">
+        <div class="product-card">
+          <div class="product-card-thumbnail">
+            <a href="#"><img src="https://placehold.it/180x180"/></a>
+          </div>
+          <h2 class="product-card-title"><a href="#">ProjectName</a></h2>
+          <span class="product-card-desc">ProjectDescription</span>
+          <span class="product-card-price">$9.99</span><span class="product-card-sale">$12.99</span>
+          <div class="product-card-colors">
+            <button href="#" class="product-card-color-option"><img src="https://placehold.it/30x30"/></button>
+            <button href="#" class="product-card-color-option"><img src="https://placehold.it/30x30"/></button>
+            <button href="#" class="product-card-color-option"><img src="https://placehold.it/30x30"/></button>
+            <button href="#" class="product-card-color-option"><img src="https://placehold.it/30x30"/></button>
+          </div>
+        </div>
+      </div>
+      <div class="small-6 medium-4 large-3 cell">
+        <div class="product-card">
+          <div class="product-card-thumbnail">
+            <a href="#"><img src="https://placehold.it/180x180"/></a>
+          </div>
+          <h2 class="product-card-title"><a href="#">ProjectName</a></h2>
+          <span class="product-card-desc">ProjectDescription</span>
+          <span class="product-card-price">$9.99</span><span class="product-card-sale">$12.99</span>
+          <div class="product-card-colors">
+            <button href="#" class="product-card-color-option"><img src="https://placehold.it/30x30"/></button>
+            <button href="#" class="product-card-color-option"><img src="https://placehold.it/30x30"/></button>
+            <button href="#" class="product-card-color-option"><img src="https://placehold.it/30x30"/></button>
+            <button href="#" class="product-card-color-option"><img src="https://placehold.it/30x30"/></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid-x grid-margin-x grid-padding-x">
+      <div class="small-12 medium-12 large-12 cell">
+        <p class="text-center">
+          <button type="button" class="button primary">
+            View all projects
+          </button>
+        </p>
+      </div>
+    </section>
+
+    <footer class="responsive-blog-footer">
+      <div class="grid-x grid-margix-x grid-padding-x">
+        <div class="small-2 medium-2 large-2 cell">
+          <img src="https://placehold.it/140x140">
+        </div>
+        <div class="small-4 medium-6 large-6 cell">
+          <h4>About Robert G. Raleigh</h4>
+          <p>
+            Robert is a project manager with 10+ years of project leadership and management experience.
+            working in the nonprofit, education, technology, and business sectors.
+          </p>
+          <p>
+            Robert is based in Portland, OR.
+          </p>
+          <a href="">Read More</a>
+        </div>
+        <div class="small-6 medium-4 large-4 cell">
+          <h4 class="mailing-list">Join my mailing list</h4>
+          <input type="text" placeholder="Email Address">
+          <a class="button expanded subscribe-button" href="#">Subscribe Now</a>
+        </div>
+        <div class="small-12 medium-6 large-6 cell">
+           <p> &copy; 2017. Robert G. Raleigh. All rights reserved.</p>
+          <div class="up-arrow">
+            <a href="#top"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div class="small-12 medium-6 large-6 cell">
+          <div class="">
+            <ul class="no-bullet">
+              <li>
+                Linkedin
+              </li>
+              <li>
+                Twitter
+              </li>
+              <li>
+                Slack
+              </li>
+            </ul>
+
+          </div>
+
+        </div>
+      </div>
+    </footer>
   <script type="text/javascript" src="app.bundle.js"></script></body>
 </html>

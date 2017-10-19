@@ -13,7 +13,7 @@
     },
     output: {
       filename: '[name].bundle.js',
-      path: __dirname + '/dist/js'
+      path: __dirname + '/dist'
     },
     module: {
       rules: [
@@ -39,24 +39,27 @@
     plugins: [
       new HtmlWebpackPlugin({
         title: 'Robert G. Raleigh',
-        filename: 'index.html'
+        filename: './index.html',
+        template: 'index.html'
       }),
       new HtmlWebpackPlugin({
         title: 'About Robert G. Raleigh',
-        filename: 'about.html'
+        filename: './about.html',
+        template: 'index.html'
       }),
       new ExtractTextPlugin({
-        filename: '[name].css',
+        filename: './css/[name].css',
       }),
       new webpack.ProvidePlugin({
         $: 'jquery',
-        jQuery: 'jquery'
+        jQuery: 'jquery',
       })
     ],
+    watch: true,
     resolve: {
       alias: {
         'foundation.core': 'foundation-sites/js/foundation.core',
-        'jquery': 'jquery/src/jquery'
+        'jquery': 'jquery/src/jquery',
       }
     }
   };
