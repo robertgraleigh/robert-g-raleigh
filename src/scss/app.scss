@@ -1,6 +1,27 @@
 
 @import '~foundation-sites/scss/foundation';
 @include foundation-everything;
+
 @import 'navigation.scss';
 @import 'product-card.scss';
+@import 'project-card.scss';
 @import 'footer.scss';
+
+#website-header {
+  background-image: url(http://placehold.it/2000x1000);
+  height: 75vh;
+}
+.profile-micro {
+  background-color: $dark-gray;
+  height: 75vh;
+}
+
+.project-managment-micro {
+  background-color: $dark-gray;
+  height: 75vh;
+}
+
+.web-development-micro {
+  background-color: $dark-gray;
+  height: 75vh;
+}

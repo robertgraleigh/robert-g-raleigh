@@ -1,3 +1,49 @@
+.top-bar {
+  background-color: $white;
+}
+
+.top-bar-left {
+  background-color: $white !important;
+}
+
+.top-bar-right {
+  background-color: $white !important;
+}
+
+.menu-text {
+  background-color: $white !important;
+}
+
+.primary-menu {
+  background-color: $white !important;
+  height: 100px;
+  ul {
+
+  }
+  li {
+
+  }
+  a {
+    color: $black !important;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  a:hover {
+    border-bottom: solid 2px #0075BD;
+  }
+}
+
+@mixin primary-menu-link {
+  color: $blue($color);
+  font-size: 1rem;
+}
+
+
+.contact-info {
+  background-color: $dark-gray;
+  padding: 0 0 0 0;
+}
+
 .ecommerce-header {
   width: 100%;
   background-color: $white;
@@ -8,12 +54,13 @@
     width: 160px;
   }
 
-  ul {
+  ul.dropdown menu{
     background-color: $white;
   }
 
   li {
     display: inline-block;
+    background-color: $white;
   }
 
   .nav-links {
@@ -64,7 +111,7 @@
 
 .ecommerce-header-top {
   width: 100%;
-  background-color: darken($dark-gray,20%);
+  background-color: $white;
   height: 40px;
   padding: 8px 20px 10px 20px;
 
@@ -81,10 +128,11 @@
 
 .ecommerce-header-top-links {
   color: lighten($dark-gray, 100%);
-
   ul li {
     display: inline;
+    padding-top: 0px;
     padding-left: 20px;
+
   }
 
   a {

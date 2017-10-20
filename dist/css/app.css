@@ -4995,6 +4995,32 @@ a.thumbnail {
   .large-flex-dir-column-reverse {
     flex-direction: column-reverse; } }
 
+.top-bar {
+  background-color: #fefefe; }
+
+.top-bar-left {
+  background-color: #fefefe !important; }
+
+.top-bar-right {
+  background-color: #fefefe !important; }
+
+.menu-text {
+  background-color: #fefefe !important; }
+
+.primary-menu {
+  background-color: #fefefe !important;
+  height: 100px; }
+  .primary-menu a {
+    color: #0a0a0a !important;
+    font-size: 1rem;
+    font-weight: bold; }
+  .primary-menu a:hover {
+    border-bottom: solid 2px #0075BD; }
+
+.contact-info {
+  background-color: #8a8a8a;
+  padding: 0 0 0 0; }
+
 .ecommerce-header {
   width: 100%;
   background-color: #fefefe;
@@ -5002,10 +5028,11 @@ a.thumbnail {
   .ecommerce-header .logo {
     height: 50px;
     width: 160px; }
-  .ecommerce-header ul {
+  .ecommerce-header ul.dropdown menu {
     background-color: #fefefe; }
   .ecommerce-header li {
-    display: inline-block; }
+    display: inline-block;
+    background-color: #fefefe; }
   .ecommerce-header .nav-links {
     margin-left: 15px; }
   .ecommerce-header a {
@@ -5038,7 +5065,7 @@ a.thumbnail {
 
 .ecommerce-header-top {
   width: 100%;
-  background-color: #575757;
+  background-color: #fefefe;
   height: 40px;
   padding: 8px 20px 10px 20px; }
   .ecommerce-header-top .fa {
@@ -5053,6 +5080,7 @@ a.thumbnail {
   color: white; }
   .ecommerce-header-top-links ul li {
     display: inline;
+    padding-top: 0px;
     padding-left: 20px; }
   .ecommerce-header-top-links a {
     color: white;
@@ -5169,6 +5197,79 @@ a.thumbnail {
   height: 25px;
   width: 25px; }
 
+.card-user-profile {
+  position: relative;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin-bottom: 1rem;
+  border: 0;
+  border-radius: 0;
+  background: #fefefe;
+  box-shadow: none;
+  overflow: hidden;
+  color: #0a0a0a; }
+  .card-user-profile > :last-child {
+    margin-bottom: 0; }
+  .card-user-profile:hover .card-user-profile-img {
+    opacity: 1; }
+
+.card-user-profile-content {
+  position: relative; }
+  .card-user-profile-content::before {
+    position: absolute;
+    content: '';
+    top: -3.4375rem;
+    left: -1.875rem;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 3.4375rem 0 0 31.25rem;
+    z-index: 0;
+    border-color: transparent transparent transparent #fefefe; }
+
+.card-user-profile-actions {
+  flex: 0 1 auto;
+  display: flex;
+  padding: 1rem;
+  background: #e6e6e6;
+  background: #fefefe;
+  display: flex; }
+  .card-user-profile-actions > :last-child {
+    margin-bottom: 0; }
+
+.card-user-profile-img {
+  max-width: 100%;
+  opacity: 0.85;
+  transition: all 0.25s ease; }
+
+.card-user-profile-avatar {
+  position: absolute;
+  bottom: 100%;
+  left: 1rem;
+  z-index: 2;
+  max-width: 5.625rem; }
+  .card-user-profile-avatar img {
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(10, 10, 10, 0.3); }
+
+.card-user-profile-name {
+  margin-bottom: 0;
+  font-weight: 300;
+  font-size: 1.5rem; }
+
+.card-user-profile-button {
+  margin-bottom: 0;
+  flex: 1 0 0; }
+  .card-user-profile-button + .card-user-profile-button {
+    margin-left: 1rem; }
+
+.card-user-profile-info {
+  font-size: 0.875rem;
+  letter-spacing: 1px;
+  opacity: 0.8; }
+
 .responsive-blog-footer {
   background: #4a4a4a;
   padding: 3rem 3rem;
@@ -5197,3 +5298,19 @@ a.thumbnail {
     .responsive-blog-footer .fa-chevron-circle-up:hover {
       color: #b0b0b0;
       transition: color 0.3s ease-in; }
+
+#website-header {
+  background-image: url(http://placehold.it/2000x1000);
+  height: 75vh; }
+
+.profile-micro {
+  background-color: #8a8a8a;
+  height: 75vh; }
+
+.project-managment-micro {
+  background-color: #8a8a8a;
+  height: 75vh; }
+
+.web-development-micro {
+  background-color: #8a8a8a;
+  height: 75vh; }
